@@ -20,7 +20,7 @@ public class CarroCtrl {
 	public boolean delete (Carro r) {
 		Carro receita = new Carro();
 		receita = (Carro) DBGenerico.getInstance().select(r.getId(), Carro.class);
-		return DBGenerico.getInstance().delete(r);
+		return DBGenerico.getInstance().delete(receita);
 	
 	}
 	@SuppressWarnings({"unchecked", "rawtypes"})
